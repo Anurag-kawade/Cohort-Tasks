@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* HEADER */
+header {
+    background-color: #1A2434;
+    color: white;
+    padding: 20px;
+}
+
+.name {
+    margin-bottom: 5px;
+}
+
+.bio {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* SECTION COMMON STYLE */
+.section {
+    padding: 20px;
+    margin: 20px 150px;
+    border-radius: 8px;
+}
+
+/* TEXT */
+.about-text {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+/* CARD (Reusable Box) */
+.card {
+    background-color: white;
+    margin: 10px auto;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 5px;
+    width: 60%;
+}
+
+/* COLORS */
+.light {
+    background-color: whitesmoke;
+}
+
+.blue {
+    background-color: rgb(168, 199, 250);
+}
+
+.yellow {
+    background-color: rgb(255, 223, 153);
+}
+
+.lightblue {
+    background-color: rgb(194, 231, 255);
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: #1A2434;
+    font-weight: 500;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(25, 25, 75);
+    color: white;
+    font-size: 12px;
+}
