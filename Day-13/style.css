@@ -88,3 +88,6 @@ footer{
 footer{
     font-size: 18px;
 }
+span{
+    text-decoration: underline;
+}
