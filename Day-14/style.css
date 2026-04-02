@@ -57,3 +57,9 @@ main button{
 #text{
     margin-bottom: 20px;
 }
+button:hover{
+    font-weight: 600;
+    color: #4169DF;
+    border-color: #4169DF;
+    background-color: white;
+}
