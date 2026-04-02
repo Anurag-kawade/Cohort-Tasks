@@ -1,0 +1,59 @@
+* {
+    font-family: san system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 60px;
+    width: 100%;
+    background-color: #1F1F1F;
+}
+nav>i{
+    color: white;
+}
+nav>a{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+}
+main{
+    height: 500px;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 30px 0px 5px 0px;
+}
+#center{
+    height: 350px;
+    width: 100%;
+    background-image: url(https://c.ndtvimg.com/2026-01/1926734d_Apple-iPhone-17-Pro-camera-close-up-250909big.jpg.large2x.jpg?downsize=773:435);
+    background-size: cover;
+    background-position: top;
+}
+#text h3{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+main button{
+    margin: 15px;
+    padding: 8px 18px;
+    border-radius: 50px;
+    color: white;
+    background-color: #4169DF;
+    font-weight: 100;
+}
+#text{
+    margin-bottom: 20px;
+}
