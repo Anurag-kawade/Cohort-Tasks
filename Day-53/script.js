@@ -1,18 +1,22 @@
-const para = document.querySelector("p");
+let para = document.querySelector("p");
+
+let text = para.innerHTML;
+
 const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-const text = para.innerText;
 
-para.addEventListener("mouseenter",()=>{
+let iteration = 0;
 
-    setInterval(()=>{
-        const str = text.split("").map((char,index)=>{
-            return characters.split("")[Math.floor(Math.random()*52)];
-        }).join("");
+function matrixText(){
+    const str = text.split("").map((char,index)=>{
+            if(index < iteration){
+                return char;
+            }
+        return characters.split("")[Math.floor(Math.random()*51)];
+    }).join("");
 
-        para.innerText = str;
+    para.innerHTML = str;
 
-    },30);
+    iteration += 1;
+}
 
-});
-
-
+setInterval(matrixText,50);
