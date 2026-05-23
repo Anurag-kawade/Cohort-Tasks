@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+html{
+    color: whitesmoke;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@property --conic-angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes changeBorder{
+    from{
+        --conic-angle : 0deg;
+    }
+
+    to{
+        --conic-angle : 360deg;
+    }
+}
+
+.box{
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(black) padding-box,
+                conic-gradient(from var(--conic-angle),black,rgb(255, 0, 136),black) border-box;
+    margin: 10px;    
+    border: 0px solid rgb(255, 255, 255,0);
+    animation: changeBorder 5s infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    transition: all 0.3s linear;
+    text-shadow: 0 0 10px rgb(255, 0, 136);
+}
+
+.box:hover{
+    animation-play-state: running;
+    border-width: 5px;
+    box-shadow: 0 0 30px rgba(255, 0, 195, 0.788);
+}
+.box:hover h1,
+.box:hover p {
+    color: rgba(255, 0, 123);
+}
+
+.box img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+p{
+    margin-left: 10px;
+}

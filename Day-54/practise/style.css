@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@property --bgColor{
+    syntax:"<color>";
+    initial-value: navy;
+    inherits: false;
+}
+.box{
+    height: 200px;
+    width: 400px;
+    background-color: var(--bgColor);
+}
