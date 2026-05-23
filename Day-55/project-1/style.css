@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black; /* The base background is always black */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 8px 16px; 
+    position: relative;
+    z-index: 2;  /*Keeps text links sitting perfectly on top of the gray box*/
+}
+
+/* 1. FIX: ONLY give the anchor name to the single link being hovered */
+a:hover {
+    anchor-name: --hovered-link;
+}
+
+/* 2. The Morpher Box (Starts as the FULL SCREEN background) */
+.anchor {
+    position: absolute;
+    background-color: #333; /* The gray color */
+    z-index: 1;
+    pointer-events: none;
+
+    /* DEFAULT STATE: Fill the entire screen */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0px;
+
+    /* Smoothly animate the edges moving */
+    transition: 
+        top 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+        bottom 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+        left 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+        right 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+        border-radius 0.3s ease;
+}
+
+/* 3. THE MAGIC: When a link is hovered, snap the screen edges to the button edges */
+body:has(a:hover) .anchor {
+    position-anchor: --hovered-link;
+    top: anchor(top);
+    bottom: anchor(bottom);
+    left: anchor(left);
+    right: anchor(right);
+    border-radius: 6px; /* Give it a button shape when it shrinks */
+}
