@@ -110,3 +110,50 @@ getUser("anurag@18", function (user) {
 // **Goal:**
 // - Callback nesting ko feel karna
 // - Yehi structure baad mein callback hell banta hai
+
+
+function loginUser(username,cb){
+    console.log("Logging in user...")
+    setTimeout(()=>{
+        obj1 = {
+            id : 1212,
+            username : "Anurag@18",
+        }
+        cb(obj1);
+    },1000);
+}
+function fetchPermissions(userId,cb){
+    console.log("Fetching permissions ...");
+    setTimeout(()=>{
+        cb(['read','write','delete']);
+    },1000);
+}
+function loadDashboard(permissions,cb){
+    console.log("Loading Dashboard ...");
+    setTimeout(()=>{
+        cb("✅ Dashboard loaded");
+    },1000);
+}
+
+loginUser("anurag",(cb)=>{
+    fetchPermissions(400,(permissions)=>{
+        loadDashboard(permissions,(cb)=>{
+            console.log(cb);
+        });
+    });
+});
+
+// this is called callback hell , matlab callback ke andar callback ke andar callback
+// This is also known as callback hell or Christmas Tree Problem
+
+// aur isko solve krta hai promises 
+
+// promises ke 3 state hote hai 
+// ex -> data lane ke liye bheja tumne 
+// jese tumne bheja wo hota hai - pending state
+// man lo server ne data bheja - resolved state 
+// man lo server ne kaha bhaj - reject state
+
+// in state ke basis pe 2 chiz chalti hai => then , catch
+// agar data mil gaya means resolve to -> then chalta hai 
+// agar reject hogaya to -> catch chalta hai 
