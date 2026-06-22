@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+#square{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+}
+#circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: navy;
+}

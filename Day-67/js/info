@@ -1,0 +1,15 @@
+React JS - Library for frontend
+
+GSAP -> is used to import moving animations
+
+Lenis is used for Scrolling smoothness
+
+Swiper js is used for making sliders
+
+three js for 3d elements
+
+what is lib v/s framework 
+
+we have to cdn 
+1) React - UI Banana
+2) ReactDOM - React and DOM ko connect krna 
