@@ -1,17 +1,17 @@
-import Female from "./components/Female";
-import Male from "./components/Male";
+// import Female from "./components/Female";
+// import Male from "./components/Male";
 // import Navbar from "./components/Navbar";
 
 const App = () => {
-  const user1 = {
-    name: "Captain America",
-    gender: "male",
-  };
+  // const user1 = {
+  //   name: "Captain America",
+  //   gender: "male",
+  // };
 
-  const user2 = {
-    name: "Wanda",
-    gender: "female",
-  };
+  // const user2 = {
+  //   name: "Wanda",
+  //   gender: "female",
+  // };
 
   return (
     <div>
