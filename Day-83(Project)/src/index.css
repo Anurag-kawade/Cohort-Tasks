@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.nav {
+  height: 25vh;
+  background-color: crimson;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 5vw;
+}
+.sec {
+  height: 50vh;
+  background-color: rgb(13, 13, 94);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vw;
+}
+.foot {
+  height: 25vh;
+  background-color: olive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+.main {
+  font-size: 30px;
+}
+button{
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: none;
+  font-size: 20px;
+  background-color: rgb(11, 163, 11);
+  outline: none;
+}
+button:active{
+  scale: 0.95;
+}
