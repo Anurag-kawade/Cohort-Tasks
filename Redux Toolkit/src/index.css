@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+h1{
+  margin: 50px;
+  margin-left: 800px;
+}
+.btn{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+button{
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+}
+button:active{
+  scale: 0.97;
+}
+.inc{
+  background-color: green;
+}
+.dec{
+  background-color: red;
+}
+.reset{
+  background-color: orange;
+}
+.theme{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 100px;
+}
+h2{
+  font-size: 40px;
+}
+.change{
+  background-color: brown;
+}
