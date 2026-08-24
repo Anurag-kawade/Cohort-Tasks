@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+html{
+  background-color: rgb(50, 49, 49);
+}
+.notes{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 1rem;
+}
+.note{
+  height: fit-content;
+  max-width: 20rem;
+  background-color: grey;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
